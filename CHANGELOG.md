@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.0 - 2026-08-02
+
+### Added
+
+- Version-pinned Ethereum consensus-specs v1.6.1 / Fulu timing and duty profiles.
+- Minimal and mainnet presets, swap-or-not shuffling, committee partitioning,
+  committee indices, logical effective balances, and proposer selection.
+- Thirty-seed cross-model tail validation and eleven Ethereum-profile tests.
+
+### Clarified
+
+- The Ethereum-calibrated profile retains VALENCE's simplified fork-choice and
+  finality engine and is not a full Ethereum client.
+
 ## 0.7.0
 
 - Added explicit proposal and attestation duty assignment, completion, and offline-miss accounting.

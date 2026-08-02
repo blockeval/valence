@@ -1,0 +1,27 @@
+simulation:
+  seed: 14
+  slots: 16
+  record_events: false
+validators:
+  count: 32
+  regions: [global]
+  isps: [isp_a, isp_b, isp_c, isp_d]
+  isp_assignment: round_robin
+  stake_distribution: equal
+topology:
+  kind: ring_plus_random
+  degree: 2
+  minimum_cross_region_peers: 0
+network:
+  latency:
+    distribution: fixed
+    fixed_ms: 25
+  loss:
+    model: none
+  fanout: 2
+resources:
+  enabled: false
+protocol:
+  implementation: ethereum_calibrated
+  ethereum_preset: minimal
+  finality_enabled: true

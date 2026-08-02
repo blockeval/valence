@@ -213,6 +213,10 @@ class MetricsConfig:
 
 @dataclass(frozen=True)
 class ProtocolConfig:
+    implementation: str = "beacon_simplified"
+    ethereum_spec_release: str = "v1.6.1"
+    ethereum_fork: str = "fulu"
+    ethereum_preset: str = "minimal"
     slot_duration_ms: int = 12_000
     epoch_length_slots: int = 8
     committee_fraction: float = 0.25
@@ -220,6 +224,14 @@ class ProtocolConfig:
     attestation_deadline_ms: int = 8_000
     justification_threshold: float = 2 / 3
     finality_enabled: bool = True
+    target_committee_size: int = 0
+    max_committees_per_slot: int = 0
+    shuffle_round_count: int = 0
+    effective_balance_increment_gwei: int = 0
+    max_effective_balance_gwei: int = 0
+    attestation_due_bps: int = 0
+    aggregate_due_bps: int = 0
+    proposer_score_boost: int = 0
 
 
 @dataclass(frozen=True)
@@ -264,8 +276,31 @@ class ValenceConfig:
                 raise ValueError("explicit_stakes length must equal validators.count")
             if any(stake <= 0 for stake in stakes):
                 raise ValueError("explicit_stakes must all be positive")
-        if not 0 < self.protocol.committee_fraction <= 1:
-            raise ValueError("protocol.committee_fraction must be in (0, 1]")
+        if self.protocol.implementation not in {"beacon_simplified", "ethereum_calibrated"}:
+            raise ValueError(
+                "protocol.implementation must be beacon_simplified or ethereum_calibrated"
+            )
+        if self.protocol.implementation == "beacon_simplified":
+            if not 0 < self.protocol.committee_fraction <= 1:
+                raise ValueError("protocol.committee_fraction must be in (0, 1]")
+        else:
+            if self.protocol.ethereum_spec_release != "v1.6.1":
+                raise ValueError("the current Ethereum backend is pinned to v1.6.1")
+            if self.protocol.ethereum_fork != "fulu":
+                raise ValueError("the current Ethereum backend is pinned to the stable Fulu fork")
+            if self.protocol.ethereum_preset not in {"minimal", "mainnet"}:
+                raise ValueError("ethereum_preset must be minimal or mainnet")
+            for name in (
+                "target_committee_size",
+                "max_committees_per_slot",
+                "shuffle_round_count",
+                "effective_balance_increment_gwei",
+                "max_effective_balance_gwei",
+                "attestation_due_bps",
+                "aggregate_due_bps",
+            ):
+                if getattr(self.protocol, name) <= 0:
+                    raise ValueError(f"Ethereum protocol field {name} must be positive")
         if self.protocol.epoch_length_slots < 1:
             raise ValueError("protocol.epoch_length_slots must be positive")
         if not 0.5 < self.protocol.justification_threshold <= 1:
@@ -644,7 +679,44 @@ def _construct(data: dict[str, Any], base_dir: Path | None = None) -> ValenceCon
     }
     network = NetworkConfig(latency=latency, loss=loss, shocks=shocks, **network_args)
     resources = ResourceConfig(**data.get("resources", {}))
-    protocol = ProtocolConfig(**data.get("protocol", {}))
+    protocol_raw = dict(data.get("protocol", {}))
+    if protocol_raw.get("implementation", "beacon_simplified") == "ethereum_calibrated":
+        from valence.protocols.ethereum_calibrated import get_preset
+
+        preset_name = str(protocol_raw.get("ethereum_preset", "minimal"))
+        preset = get_preset(preset_name)
+        pinned = {
+            "ethereum_spec_release": "v1.6.1",
+            "ethereum_fork": "fulu",
+            "slot_duration_ms": preset.slot_duration_ms,
+            "epoch_length_slots": preset.slots_per_epoch,
+            "attestation_delay_ms": preset.attestation_due_ms,
+            "attestation_deadline_ms": preset.aggregate_due_ms,
+            "target_committee_size": preset.target_committee_size,
+            "max_committees_per_slot": preset.max_committees_per_slot,
+            "shuffle_round_count": preset.shuffle_round_count,
+            "effective_balance_increment_gwei": preset.effective_balance_increment_gwei,
+            "max_effective_balance_gwei": preset.max_effective_balance_gwei,
+            "attestation_due_bps": preset.attestation_due_bps,
+            "aggregate_due_bps": preset.aggregate_due_bps,
+            "proposer_score_boost": preset.proposer_score_boost,
+        }
+        conflicting = {
+            key: (protocol_raw[key], expected)
+            for key, expected in pinned.items()
+            if key in protocol_raw and protocol_raw[key] != expected
+        }
+        if conflicting:
+            details = ", ".join(
+                f"{key}={actual!r} (expected {expected!r})"
+                for key, (actual, expected) in sorted(conflicting.items())
+            )
+            raise ValueError(
+                "Ethereum-calibrated profile fields are version-pinned and cannot be overridden: "
+                + details
+            )
+        protocol_raw.update(pinned)
+    protocol = ProtocolConfig(**protocol_raw)
     faults = tuple(
         FaultConfig(
             **{

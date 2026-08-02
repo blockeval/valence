@@ -37,6 +37,7 @@ class Attestation:
     source_epoch: int = 0
     target_checkpoint_id: str = "genesis"
     target_epoch: int = 0
+    committee_index: int = 0
 
 
 @dataclass(frozen=True)

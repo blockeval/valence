@@ -1,0 +1,38 @@
+simulation:
+  seed: 14
+  slots: 32
+  record_events: false
+validators:
+  count: 32
+  regions: [global]
+  isps: [isp_a, isp_b, isp_c, isp_d]
+  isp_assignment: weighted
+  isp_weights: [0.35, 0.30, 0.20, 0.15]
+  stake_distribution: lognormal
+  stake_sigma: 0.65
+topology:
+  kind: ring_plus_random
+  degree: 2
+  minimum_cross_region_peers: 0
+network:
+  latency:
+    distribution: quantile
+    p50_ms: 75
+    p95_ms: 400
+    p99_ms: 750
+    max_ms: 1500
+  loss:
+    model: none
+  block_size_bytes: 120000
+  attestation_size_bytes: 512
+  fanout: 2
+resources:
+  enabled: false
+protocol:
+  implementation: beacon_simplified
+  slot_duration_ms: 6000
+  epoch_length_slots: 8
+  committee_fraction: 0.125
+  attestation_delay_ms: 1999
+  attestation_deadline_ms: 4000
+  finality_enabled: true

@@ -6,8 +6,8 @@ authors:
   - family-names: "Harris"
     given-names: "Chris"
     affiliation: "University of Northern Colorado"
-version: 0.7.0
-date-released: 2026-08-01
+version: 0.8.0
+date-released: 2026-08-02
 license: MIT
 keywords:
   - blockchain
@@ -19,5 +19,6 @@ keywords:
 abstract: >-
   VALENCE is a deterministic discrete-event simulator for evaluating how
   latency tails, temporal dependence, correlated disruption, validator outages,
-  gossip topology, stake distribution, and validator resource constraints affect
-  Proof-of-Stake consensus.
+  gossip topology, stake distribution, validator resource constraints, and
+  version-pinned Ethereum-calibrated validator duties affect Proof-of-Stake
+  consensus.
