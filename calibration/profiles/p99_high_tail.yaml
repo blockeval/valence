@@ -1,0 +1,14 @@
+name: p99_high_tail_v1
+source: "Synthetic matched-p50/p95 profile for controlled VALENCE experiments; only p99 differs from p99_low_tail_v1."
+symmetric: true
+pairs:
+  - {source_region: north_america, target_region: north_america, p50_ms: 120, p95_ms: 900, p99_ms: 7500}
+  - {source_region: europe, target_region: europe, p50_ms: 110, p95_ms: 850, p99_ms: 7000}
+  - {source_region: asia, target_region: asia, p50_ms: 140, p95_ms: 1000, p99_ms: 8000}
+  - {source_region: oceania, target_region: oceania, p50_ms: 160, p95_ms: 1200, p99_ms: 9000}
+  - {source_region: north_america, target_region: europe, p50_ms: 220, p95_ms: 1400, p99_ms: 10000}
+  - {source_region: north_america, target_region: asia, p50_ms: 350, p95_ms: 2100, p99_ms: 14000}
+  - {source_region: north_america, target_region: oceania, p50_ms: 400, p95_ms: 2400, p99_ms: 16000}
+  - {source_region: europe, target_region: asia, p50_ms: 320, p95_ms: 1900, p99_ms: 13000}
+  - {source_region: europe, target_region: oceania, p50_ms: 380, p95_ms: 2200, p99_ms: 15000}
+  - {source_region: asia, target_region: oceania, p50_ms: 250, p95_ms: 1600, p99_ms: 11000}

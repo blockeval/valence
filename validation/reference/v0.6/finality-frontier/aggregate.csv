@@ -1,0 +1,6 @@
+duration_slots,duration_epochs,mean_maximum_finality_lag_epochs,mean_finality_delay_ever_exceeds_one_epoch,mean_boundary_fraction_finality_lag_exceeds_one_epoch,mean_recovered_to_one_epoch_by_end,mean_finality_lag_epochs_at_end,mean_stale_head_attestation_rate,mean_mean_slot_stake_weighted_head_agreement,mean_slot_divergence_rate_below_0_9
+0,0.0,1.0,0.0,0.0,1.0,1.0,0.0592447916667,1.0,0.0
+4,0.5,1.0,0.0,0.0,1.0,1.0,0.1440104166666,0.9654525936464999,0.08297872340435
+8,1.0,2.036404217786,1.0,0.266666666667,0.8,1.144003551305,0.21953125,0.9094829054828,0.17127659574445
+12,1.5,2.15,1.0,0.2833333333336,0.8,1.144003551305,0.2966145833334,0.8521519697285,0.25851063829775
+16,2.0,3.0,1.0,0.3999999999998,0.8,1.144003551305,0.36875,0.79821636152195,0.3446808510639

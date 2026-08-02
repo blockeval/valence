@@ -1,0 +1,41 @@
+simulation:
+  seed: 14
+  slots: 16
+  record_events: false
+
+validators:
+  count: 32
+  regions: [north_america, europe, asia, oceania]
+  isps: [isp_a, isp_b, isp_c]
+  stake_distribution: equal
+
+topology:
+  kind: ring_plus_random
+  degree: 6
+
+network:
+  fanout: 4
+  block_size_bytes: 1000000
+  attestation_size_bytes: 50000
+  latency:
+    distribution: fixed
+    fixed_ms: 40
+    jitter_phi: 0.0
+    jitter_sigma_ms: 0.0
+  loss:
+    model: none
+
+resources:
+  enabled: true
+  outbound_bandwidth_mbps: 1.0
+  inbound_bandwidth_mbps: 1.0
+  processing_rate_mbps: 0.5
+  processing_fixed_ms: 5
+
+protocol:
+  slot_duration_ms: 12000
+  epoch_length_slots: 4
+  committee_fraction: 0.25
+  attestation_delay_ms: 1000
+  attestation_deadline_ms: 8000
+  justification_threshold: 0.6666666667

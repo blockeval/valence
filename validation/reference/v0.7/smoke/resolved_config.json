@@ -1,0 +1,101 @@
+{
+  "faults": [],
+  "metrics": {
+    "minimum_branch_support": 0.01,
+    "orphan_settlement_slots": 2
+  },
+  "network": {
+    "attestation_size_bytes": 512,
+    "block_size_bytes": 120000,
+    "fanout": 0,
+    "latency": {
+      "body": null,
+      "calibration_mode": "parameters",
+      "components": [],
+      "distribution": "fixed",
+      "empirical_samples_ms": [],
+      "erlang_stages": 2,
+      "fixed_ms": 40,
+      "initial_state": 0,
+      "jitter_phi": 0.0,
+      "jitter_sigma_ms": 0.0,
+      "markov_scope": "edge",
+      "max_ms": 0.0,
+      "mean_ms": 80.0,
+      "p50_ms": 50.0,
+      "p95_ms": 100.0,
+      "p99_ms": 200.0,
+      "pairs": [],
+      "profile_name": "",
+      "profile_path": "",
+      "profile_source": "",
+      "profile_symmetric": true,
+      "scale_ms": 50.0,
+      "shape": 2.0,
+      "shift_ms": 0.0,
+      "sigma": 0.55,
+      "splice_quantile": 0.99,
+      "states": [],
+      "stationary_initialization": false,
+      "stddev_ms": 20.0,
+      "tail": null,
+      "transition_matrix": []
+    },
+    "loss": {
+      "bad_to_good": 0.25,
+      "good_to_bad": 0.01,
+      "loss_bad": 0.8,
+      "loss_good": 0.0,
+      "model": "none",
+      "probability": 0.0
+    },
+    "shocks": []
+  },
+  "protocol": {
+    "attestation_deadline_ms": 8000,
+    "attestation_delay_ms": 4000,
+    "committee_fraction": 0.25,
+    "epoch_length_slots": 4,
+    "finality_enabled": true,
+    "justification_threshold": 0.6666666667,
+    "slot_duration_ms": 12000
+  },
+  "resources": {
+    "enabled": true,
+    "inbound_bandwidth_mbps": 10000,
+    "outbound_bandwidth_mbps": 10000,
+    "processing_fixed_ms": 0,
+    "processing_rate_mbps": 10000
+  },
+  "simulation": {
+    "record_events": true,
+    "seed": 14,
+    "slots": 8
+  },
+  "topology": {
+    "degree": 4,
+    "kind": "ring_plus_random",
+    "minimum_cross_region_peers": 1,
+    "same_isp_bias": 0.0,
+    "same_region_bias": 0.8
+  },
+  "validators": {
+    "count": 16,
+    "explicit_stakes": [],
+    "isp_assignment": "round_robin",
+    "isp_weights": [],
+    "isps": [
+      "isp_a",
+      "isp_b"
+    ],
+    "region_assignment": "round_robin",
+    "region_weights": [],
+    "regions": [
+      "north_america",
+      "europe",
+      "asia"
+    ],
+    "stake_distribution": "equal",
+    "stake_sigma": 1.0
+  }
+}

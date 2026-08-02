@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this VALENCE software release and the associated paper when available."
+title: "VALENCE: Validator Availability and Latency Emulator for Network Consensus Evaluation"
+type: software
+authors:
+  - family-names: "Harris"
+    given-names: "Chris"
+    affiliation: "University of Northern Colorado"
+version: 0.7.0
+date-released: 2026-08-01
+license: MIT
+keywords:
+  - blockchain
+  - proof-of-stake
+  - consensus
+  - distributed systems
+  - network latency
+  - discrete-event simulation
+abstract: >-
+  VALENCE is a deterministic discrete-event simulator for evaluating how
+  latency tails, temporal dependence, correlated disruption, validator outages,
+  gossip topology, stake distribution, and validator resource constraints affect
+  Proof-of-Stake consensus.

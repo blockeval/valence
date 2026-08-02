@@ -1,0 +1,21 @@
+[
+  {
+    "action": "validator_outage",
+    "duration_slots": 2,
+    "end_ms": 48000,
+    "name": "europe_crash",
+    "recovery_mode": "preserve_view",
+    "resynchronization_ms": 2000,
+    "scope": "region",
+    "start_ms": 24000,
+    "start_slot": 2,
+    "target_count": 4,
+    "target_ids": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "target_stake": 0.5
+  }
+]

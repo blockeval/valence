@@ -1,0 +1,40 @@
+simulation:
+  seed: 14
+  slots: 32
+  record_events: false
+validators:
+  count: 128
+  regions: [north_america, europe, asia, oceania]
+  region_assignment: weighted
+  region_weights: [0.40, 0.30, 0.20, 0.10]
+  isps: [isp_a, isp_b, isp_c, isp_d]
+  isp_assignment: weighted
+  isp_weights: [0.35, 0.30, 0.20, 0.15]
+  stake_distribution: equal
+topology:
+  kind: regional_clustered
+  degree: 6
+  same_region_bias: 0.80
+  same_isp_bias: 0.15
+  minimum_cross_region_peers: 1
+network:
+  latency:
+    distribution: regional_profile
+    profile_path: ../calibration/profiles/p99_low_tail.yaml
+    p50_ms: 250
+    p95_ms: 1600
+    p99_ms: 3200
+  loss:
+    model: none
+  block_size_bytes: 120000
+  attestation_size_bytes: 512
+  fanout: 4
+resources:
+  enabled: false
+protocol:
+  slot_duration_ms: 12000
+  epoch_length_slots: 8
+  committee_fraction: 0.25
+  attestation_delay_ms: 4000
+  attestation_deadline_ms: 8000
+  finality_enabled: true

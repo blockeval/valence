@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ipynb text diff
+*.png binary
+*.pdf binary

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/opt/pyvenv/bin/valence",
+    "run",
+    "configs/outage_demo.yaml",
+    "--output",
+    "validation/reference/v0.7/outage-demo"
+  ],
+  "config_path": "/mnt/data/valence-public-v0.7.0/configs/outage_demo.yaml",
+  "config_sha256": "772f703e06e2cb53485663bdd9adab74fd40703611e9fc0046e7b8794c89c6c1",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+  "python_implementation": "CPython",
+  "python_version": "3.13.5",
+  "resolved_config_sha256": "70cf214694863014e46e01d7947f01433bcf59ad297025ecfe1dd88f8718c888",
+  "run_hash": "0ef9f8854761a906991d7b535641a03f62f5d54a40f96263634fe9f7d5227daf",
+  "valence_version": "0.7.0"
+}

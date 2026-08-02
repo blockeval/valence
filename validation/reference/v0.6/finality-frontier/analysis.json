@@ -1,0 +1,352 @@
+{
+  "aggregate": {
+    "0": {
+      "boundary_fraction_finality_lag_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.0,
+        "bootstrap_ci_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_delay_ever_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.0,
+        "bootstrap_ci_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_lag_epochs_at_end": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "maximum_finality_lag_epochs": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "mean_slot_stake_weighted_head_agreement": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "recovered_to_one_epoch_by_end": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "slot_divergence_rate_below_0_9": {
+        "bootstrap_ci_high": 0.0,
+        "bootstrap_ci_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "stale_head_attestation_rate": {
+        "bootstrap_ci_high": 0.06614583333335,
+        "bootstrap_ci_low": 0.05312499999999875,
+        "mean": 0.0592447916667,
+        "median": 0.057291666667,
+        "n": 20,
+        "sd": 0.015438280360862538
+      }
+    },
+    "12": {
+      "boundary_fraction_finality_lag_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.37500000000030004,
+        "bootstrap_ci_low": 0.20000000000030002,
+        "mean": 0.2833333333336,
+        "median": 0.166666666667,
+        "n": 20,
+        "sd": 0.2030469654425586
+      },
+      "finality_delay_ever_exceeds_one_epoch": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_lag_epochs_at_end": {
+        "bootstrap_ci_high": 1.3543636634934,
+        "bootstrap_ci_low": 1.0087467923494,
+        "mean": 1.144003551305,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.4028124902032233
+      },
+      "maximum_finality_lag_epochs": {
+        "bootstrap_ci_high": 2.3,
+        "bootstrap_ci_low": 2.0,
+        "mean": 2.15,
+        "median": 2.0,
+        "n": 20,
+        "sd": 0.36634754853252327
+      },
+      "mean_slot_stake_weighted_head_agreement": {
+        "bootstrap_ci_high": 0.8596351244568463,
+        "bootstrap_ci_low": 0.8448015222884812,
+        "mean": 0.8521519697285,
+        "median": 0.8500685094805001,
+        "n": 20,
+        "sd": 0.01722016137968643
+      },
+      "recovered_to_one_epoch_by_end": {
+        "bootstrap_ci_high": 0.95,
+        "bootstrap_ci_low": 0.6,
+        "mean": 0.8,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.41039134083406165
+      },
+      "slot_divergence_rate_below_0_9": {
+        "bootstrap_ci_high": 0.26702127659575,
+        "bootstrap_ci_low": 0.24999999999975003,
+        "mean": 0.25851063829775,
+        "median": 0.255319148936,
+        "n": 20,
+        "sd": 0.019857489457462324
+      },
+      "stale_head_attestation_rate": {
+        "bootstrap_ci_high": 0.3022135416667,
+        "bootstrap_ci_low": 0.29101562500015,
+        "mean": 0.2966145833334,
+        "median": 0.2955729166665,
+        "n": 20,
+        "sd": 0.013436352460087104
+      }
+    },
+    "16": {
+      "boundary_fraction_finality_lag_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.4666666666666,
+        "bootstrap_ci_low": 0.3499999999997,
+        "mean": 0.3999999999998,
+        "median": 0.333333333333,
+        "n": 20,
+        "sd": 0.13679711361162747
+      },
+      "finality_delay_ever_exceeds_one_epoch": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_lag_epochs_at_end": {
+        "bootstrap_ci_high": 1.3430523639251999,
+        "bootstrap_ci_low": 1.0174935846988,
+        "mean": 1.144003551305,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.4028124902032233
+      },
+      "maximum_finality_lag_epochs": {
+        "bootstrap_ci_high": 3.0,
+        "bootstrap_ci_low": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "mean_slot_stake_weighted_head_agreement": {
+        "bootstrap_ci_high": 0.8070588239096513,
+        "bootstrap_ci_low": 0.7898874584858925,
+        "mean": 0.79821636152195,
+        "median": 0.794895124882,
+        "n": 20,
+        "sd": 0.02034137374640065
+      },
+      "recovered_to_one_epoch_by_end": {
+        "bootstrap_ci_high": 0.95,
+        "bootstrap_ci_low": 0.6,
+        "mean": 0.8,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.41039134083406165
+      },
+      "slot_divergence_rate_below_0_9": {
+        "bootstrap_ci_high": 0.35212765957455006,
+        "bootstrap_ci_low": 0.3372340425532001,
+        "mean": 0.3446808510639,
+        "median": 0.340425531915,
+        "n": 20,
+        "sd": 0.017734228797198066
+      },
+      "stale_head_attestation_rate": {
+        "bootstrap_ci_high": 0.3752604166666513,
+        "bootstrap_ci_low": 0.36236653645817124,
+        "mean": 0.36875,
+        "median": 0.364583333333,
+        "n": 20,
+        "sd": 0.015815721969175158
+      }
+    },
+    "4": {
+      "boundary_fraction_finality_lag_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.0,
+        "bootstrap_ci_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_delay_ever_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.0,
+        "bootstrap_ci_low": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_lag_epochs_at_end": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "maximum_finality_lag_epochs": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "mean_slot_stake_weighted_head_agreement": {
+        "bootstrap_ci_high": 0.9693219983677487,
+        "bootstrap_ci_low": 0.96166317914539,
+        "mean": 0.9654525936464999,
+        "median": 0.9662029793739999,
+        "n": 20,
+        "sd": 0.008761588082140705
+      },
+      "recovered_to_one_epoch_by_end": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "slot_divergence_rate_below_0_9": {
+        "bootstrap_ci_high": 0.08829787234050124,
+        "bootstrap_ci_low": 0.07765957446814999,
+        "mean": 0.08297872340435,
+        "median": 0.085106382979,
+        "n": 20,
+        "sd": 0.013632410117320377
+      },
+      "stale_head_attestation_rate": {
+        "bootstrap_ci_high": 0.15130208333314998,
+        "bootstrap_ci_low": 0.13749999999995,
+        "mean": 0.1440104166666,
+        "median": 0.138020833333,
+        "n": 20,
+        "sd": 0.016428969057837466
+      }
+    },
+    "8": {
+      "boundary_fraction_finality_lag_exceeds_one_epoch": {
+        "bootstrap_ci_high": 0.36666666666700004,
+        "bootstrap_ci_low": 0.19166666666700002,
+        "mean": 0.266666666667,
+        "median": 0.166666666667,
+        "n": 20,
+        "sd": 0.20519567041703082
+      },
+      "finality_delay_ever_exceeds_one_epoch": {
+        "bootstrap_ci_high": 1.0,
+        "bootstrap_ci_low": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.0
+      },
+      "finality_lag_epochs_at_end": {
+        "bootstrap_ci_high": 1.3334338811357733,
+        "bootstrap_ci_low": 1.0087467923494,
+        "mean": 1.144003551305,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.4028124902032233
+      },
+      "maximum_finality_lag_epochs": {
+        "bootstrap_ci_high": 2.109212653358,
+        "bootstrap_ci_low": 2.0,
+        "mean": 2.036404217786,
+        "median": 2.0,
+        "n": 20,
+        "sd": 0.1628046112744058
+      },
+      "mean_slot_stake_weighted_head_agreement": {
+        "bootstrap_ci_high": 0.9147280316857975,
+        "bootstrap_ci_low": 0.9047324359406775,
+        "mean": 0.9094829054828,
+        "median": 0.9076860310235,
+        "n": 20,
+        "sd": 0.011459138068536419
+      },
+      "recovered_to_one_epoch_by_end": {
+        "bootstrap_ci_high": 0.95,
+        "bootstrap_ci_low": 0.6,
+        "mean": 0.8,
+        "median": 1.0,
+        "n": 20,
+        "sd": 0.41039134083406165
+      },
+      "slot_divergence_rate_below_0_9": {
+        "bootstrap_ci_high": 0.17765957446775124,
+        "bootstrap_ci_low": 0.1648936170211,
+        "mean": 0.17127659574445,
+        "median": 0.170212765957,
+        "n": 20,
+        "sd": 0.014602824279753554
+      },
+      "stale_head_attestation_rate": {
+        "bootstrap_ci_high": 0.22708333333335,
+        "bootstrap_ci_low": 0.21263020833329999,
+        "mean": 0.21953125,
+        "median": 0.21484375,
+        "n": 20,
+        "sd": 0.01687904367293555
+      }
+    }
+  },
+  "boundary_estimates": {
+    "first_observed_delay_duration_slots": 8,
+    "majority_delay_duration_slots": 8,
+    "near_certain_delay_duration_slots": 8
+  },
+  "design": {
+    "durations_slots": [
+      0,
+      4,
+      8,
+      12,
+      16
+    ],
+    "epoch_length_slots": 8,
+    "latency_multiplier": 40.0,
+    "paired_seed_count": 20,
+    "shock_start_slot": 8
+  }
+}

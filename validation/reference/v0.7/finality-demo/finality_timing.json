@@ -1,0 +1,39 @@
+{
+  "censored_checkpoints": 1,
+  "checkpoint_finality_records": [
+    {
+      "censor_time_ms": null,
+      "checkpoint_id": "b000002-v00008",
+      "created_at_ms": 24000,
+      "finalized_at_ms": 107999,
+      "right_censored": false,
+      "target_epoch": 1,
+      "time_to_finality_ms": 83999
+    },
+    {
+      "censor_time_ms": null,
+      "checkpoint_id": "b000005-v00003",
+      "created_at_ms": 60000,
+      "finalized_at_ms": 143999,
+      "right_censored": false,
+      "target_epoch": 2,
+      "time_to_finality_ms": 83999
+    },
+    {
+      "censor_time_ms": 48000,
+      "checkpoint_id": "b000008-v00012",
+      "created_at_ms": 96000,
+      "finalized_at_ms": null,
+      "right_censored": true,
+      "target_epoch": 3,
+      "time_to_finality_ms": null
+    }
+  ],
+  "checkpoint_finalization_rate": 0.666666666667,
+  "finalized_checkpoints": 2,
+  "maximum_checkpoint_time_to_finality_ms": 83999.0,
+  "mean_checkpoint_time_to_finality_ms": 83999.0,
+  "p50_checkpoint_time_to_finality_ms": 83999.0,
+  "p95_checkpoint_time_to_finality_ms": 83999.0,
+  "p99_checkpoint_time_to_finality_ms": 83999.0
+}

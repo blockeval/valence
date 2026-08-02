@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/opt/pyvenv/bin/valence",
+    "run",
+    "configs/finality_demo.yaml",
+    "--output",
+    "validation/reference/v0.7/finality-demo"
+  ],
+  "config_path": "/mnt/data/valence-public-v0.7.0/configs/finality_demo.yaml",
+  "config_sha256": "1cb7216243e2a52e10bcc7a8be8d0f5fbab354807d0698019f3887ed9cbb5017",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+  "python_implementation": "CPython",
+  "python_version": "3.13.5",
+  "resolved_config_sha256": "da34e9d022d87e83ea00c9a40022f33318a2c98f024568b16b0af4800059ffca",
+  "run_hash": "b10bfecf22c51549fdd5d463f7131d438a815d899b719c472c810f148671b719",
+  "valence_version": "0.7.0"
+}

@@ -1,0 +1,890 @@
+{
+  "attempted_base_latency": {
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0
+  },
+  "attempted_effective_latency": {
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0
+  },
+  "attempted_latency_samples": 528,
+  "attestation_availability": 0.875,
+  "attestation_duties_assigned": 64,
+  "attestation_duties_completed": 56,
+  "attestation_duties_missed_offline": 8,
+  "attestation_stake_assigned": 8.0,
+  "attestation_stake_completed": 7.0,
+  "attestation_stake_on_time": 7.0,
+  "attestations_created": 56,
+  "availability": {
+    "attestation_availability": 0.875,
+    "attestation_completion_rate": 0.875,
+    "by_isp": {
+      "isp_a": {
+        "attestation_availability": 1.0,
+        "attestation_completion_rate": 1.0,
+        "attestation_duties_assigned": 32,
+        "attestation_duties_completed": 32,
+        "attestation_duties_missed_offline": 0,
+        "proposal_availability": 1.0,
+        "proposal_duties_assigned": 1,
+        "proposal_duties_completed": 1,
+        "stake_weighted_attestation_availability": 1.0,
+        "stake_weighted_proposal_availability": 1.0
+      },
+      "isp_b": {
+        "attestation_availability": 0.75,
+        "attestation_completion_rate": 0.75,
+        "attestation_duties_assigned": 32,
+        "attestation_duties_completed": 24,
+        "attestation_duties_missed_offline": 8,
+        "proposal_availability": 0.714285714286,
+        "proposal_duties_assigned": 7,
+        "proposal_duties_completed": 5,
+        "stake_weighted_attestation_availability": 0.75,
+        "stake_weighted_proposal_availability": 0.714285714286
+      }
+    },
+    "by_region": {
+      "europe": {
+        "attestation_availability": 0.75,
+        "attestation_completion_rate": 0.75,
+        "attestation_duties_assigned": 32,
+        "attestation_duties_completed": 24,
+        "attestation_duties_missed_offline": 8,
+        "proposal_availability": 0.714285714286,
+        "proposal_duties_assigned": 7,
+        "proposal_duties_completed": 5,
+        "stake_weighted_attestation_availability": 0.75,
+        "stake_weighted_proposal_availability": 0.714285714286
+      },
+      "north_america": {
+        "attestation_availability": 1.0,
+        "attestation_completion_rate": 1.0,
+        "attestation_duties_assigned": 32,
+        "attestation_duties_completed": 32,
+        "attestation_duties_missed_offline": 0,
+        "proposal_availability": 1.0,
+        "proposal_duties_assigned": 1,
+        "proposal_duties_completed": 1,
+        "stake_weighted_attestation_availability": 1.0,
+        "stake_weighted_proposal_availability": 1.0
+      }
+    },
+    "by_validator": {
+      "0": {
+        "attestation_assigned": 8,
+        "attestation_completed": 8,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 0,
+        "attestation_on_time": 8,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 1.0,
+        "attestation_stake_on_time": 1.0,
+        "attestation_stale_head": 3,
+        "isp": "isp_a",
+        "operational_availability": 1.0,
+        "proposal_assigned": 0,
+        "proposal_completed": 0,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.0,
+        "proposal_stake_completed": 0.0,
+        "region": "north_america",
+        "stake": 0.125
+      },
+      "1": {
+        "attestation_assigned": 8,
+        "attestation_completed": 6,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 2,
+        "attestation_on_time": 6,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 0.75,
+        "attestation_stake_on_time": 0.75,
+        "attestation_stale_head": 1,
+        "isp": "isp_b",
+        "operational_availability": 0.729166666667,
+        "proposal_assigned": 0,
+        "proposal_completed": 0,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.0,
+        "proposal_stake_completed": 0.0,
+        "region": "europe",
+        "stake": 0.125
+      },
+      "2": {
+        "attestation_assigned": 8,
+        "attestation_completed": 8,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 0,
+        "attestation_on_time": 8,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 1.0,
+        "attestation_stake_on_time": 1.0,
+        "attestation_stale_head": 3,
+        "isp": "isp_a",
+        "operational_availability": 1.0,
+        "proposal_assigned": 0,
+        "proposal_completed": 0,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.0,
+        "proposal_stake_completed": 0.0,
+        "region": "north_america",
+        "stake": 0.125
+      },
+      "3": {
+        "attestation_assigned": 8,
+        "attestation_completed": 6,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 2,
+        "attestation_on_time": 6,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 0.75,
+        "attestation_stake_on_time": 0.75,
+        "attestation_stale_head": 1,
+        "isp": "isp_b",
+        "operational_availability": 0.729166666667,
+        "proposal_assigned": 0,
+        "proposal_completed": 0,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.0,
+        "proposal_stake_completed": 0.0,
+        "region": "europe",
+        "stake": 0.125
+      },
+      "4": {
+        "attestation_assigned": 8,
+        "attestation_completed": 8,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 0,
+        "attestation_on_time": 8,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 1.0,
+        "attestation_stake_on_time": 1.0,
+        "attestation_stale_head": 3,
+        "isp": "isp_a",
+        "operational_availability": 1.0,
+        "proposal_assigned": 1,
+        "proposal_completed": 1,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.125,
+        "proposal_stake_completed": 0.125,
+        "region": "north_america",
+        "stake": 0.125
+      },
+      "5": {
+        "attestation_assigned": 8,
+        "attestation_completed": 6,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 2,
+        "attestation_on_time": 6,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 0.75,
+        "attestation_stake_on_time": 0.75,
+        "attestation_stale_head": 1,
+        "isp": "isp_b",
+        "operational_availability": 0.729166666667,
+        "proposal_assigned": 1,
+        "proposal_completed": 1,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.125,
+        "proposal_stake_completed": 0.125,
+        "region": "europe",
+        "stake": 0.125
+      },
+      "6": {
+        "attestation_assigned": 8,
+        "attestation_completed": 8,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 0,
+        "attestation_on_time": 8,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 1.0,
+        "attestation_stake_on_time": 1.0,
+        "attestation_stale_head": 3,
+        "isp": "isp_a",
+        "operational_availability": 1.0,
+        "proposal_assigned": 0,
+        "proposal_completed": 0,
+        "proposal_missed_offline": 0,
+        "proposal_stake_assigned": 0.0,
+        "proposal_stake_completed": 0.0,
+        "region": "north_america",
+        "stake": 0.125
+      },
+      "7": {
+        "attestation_assigned": 8,
+        "attestation_completed": 6,
+        "attestation_current_head": 5,
+        "attestation_late": 0,
+        "attestation_missed_offline": 2,
+        "attestation_on_time": 6,
+        "attestation_stake_assigned": 1.0,
+        "attestation_stake_completed": 0.75,
+        "attestation_stake_on_time": 0.75,
+        "attestation_stale_head": 1,
+        "isp": "isp_b",
+        "operational_availability": 0.729166666667,
+        "proposal_assigned": 6,
+        "proposal_completed": 4,
+        "proposal_missed_offline": 2,
+        "proposal_stake_assigned": 0.75,
+        "proposal_stake_completed": 0.5,
+        "region": "europe",
+        "stake": 0.125
+      }
+    },
+    "committee_participation_by_slot": {
+      "0": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      },
+      "1": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      },
+      "2": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 4,
+        "completed_stake": 0.5,
+        "participation_rate": 0.5,
+        "stake_participation_rate": 0.5
+      },
+      "3": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 4,
+        "completed_stake": 0.5,
+        "participation_rate": 0.5,
+        "stake_participation_rate": 0.5
+      },
+      "4": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      },
+      "5": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      },
+      "6": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      },
+      "7": {
+        "assigned": 8,
+        "assigned_stake": 1.0,
+        "completed": 8,
+        "completed_stake": 1.0,
+        "participation_rate": 1.0,
+        "stake_participation_rate": 1.0
+      }
+    },
+    "fraction_slots_below_participation_threshold": 0.25,
+    "mean_committee_participation_rate": 0.875,
+    "mean_committee_stake_participation_rate": 0.875,
+    "operational_availability": 0.864583333333,
+    "proposal_availability": 0.75,
+    "stake_weighted_attestation_availability": 0.875,
+    "stake_weighted_proposal_availability": 0.75
+  },
+  "blocks_created": 6,
+  "boundary_epochs": [
+    0,
+    1
+  ],
+  "boundary_fraction_finality_lag_exceeds_one_epoch": 0.0,
+  "cross_region_edge_fraction": 0.833333333333,
+  "current_slot_attestation_rate": 0.714285714286,
+  "current_slot_attestations": 40,
+  "delivered_bytes": 4374080,
+  "delivered_to_attempted_p999_ratio": 1.0,
+  "delivered_to_attempted_p99_ratio": 1.0,
+  "delivery_pipeline_samples": 375,
+  "drop_rate": 0.0,
+  "duplicate_arrivals_ignored": 27,
+  "faults": [
+    {
+      "action": "validator_outage",
+      "duration_slots": 2,
+      "end_ms": 48000,
+      "name": "europe_crash",
+      "recovery_mode": "preserve_view",
+      "resynchronization_ms": 2000,
+      "scope": "region",
+      "start_ms": 24000,
+      "start_slot": 2,
+      "target_count": 4,
+      "target_ids": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "target_stake": 0.5
+    }
+  ],
+  "final_heads": {
+    "0": "b000007-v00007",
+    "1": "b000007-v00007",
+    "2": "b000007-v00007",
+    "3": "b000007-v00007",
+    "4": "b000007-v00007",
+    "5": "b000007-v00007",
+    "6": "b000007-v00007",
+    "7": "b000007-v00007"
+  },
+  "finality_agreement_by_epoch": [
+    1.0,
+    1.0
+  ],
+  "finality_delay_ever_exceeds_one_epoch": 0,
+  "finality_delay_exceeds_one_epoch": 0,
+  "finality_lag_by_boundary": [
+    0.0,
+    1.0
+  ],
+  "finality_lag_epochs": 1.0,
+  "finality_states": {
+    "0": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "1": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "2": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "3": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "4": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "5": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "6": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    },
+    "7": {
+      "finalized_checkpoint": "genesis",
+      "finalized_epoch": 0,
+      "justified_checkpoint": "b000001-v00007",
+      "justified_epoch": 1
+    }
+  },
+  "finality_timing": {
+    "censored_checkpoints": 2,
+    "checkpoint_finality_records": [
+      {
+        "censor_time_ms": 84000,
+        "checkpoint_id": "b000001-v00007",
+        "created_at_ms": 12000,
+        "finalized_at_ms": null,
+        "right_censored": true,
+        "target_epoch": 1,
+        "time_to_finality_ms": null
+      },
+      {
+        "censor_time_ms": 72000,
+        "checkpoint_id": "b000002-v00004",
+        "created_at_ms": 24000,
+        "finalized_at_ms": null,
+        "right_censored": true,
+        "target_epoch": 1,
+        "time_to_finality_ms": null
+      }
+    ],
+    "checkpoint_finalization_rate": 0.0,
+    "finalized_checkpoints": 0,
+    "maximum_checkpoint_time_to_finality_ms": 0.0,
+    "mean_checkpoint_time_to_finality_ms": 0.0,
+    "p50_checkpoint_time_to_finality_ms": 0.0,
+    "p95_checkpoint_time_to_finality_ms": 0.0,
+    "p99_checkpoint_time_to_finality_ms": 0.0
+  },
+  "finalization_transitions": 8,
+  "first_boundary_finality_lag_exceeds_one_epoch": null,
+  "fork_episode_count": 1,
+  "fork_episode_durations_ms": [
+    4044
+  ],
+  "fork_episode_durations_slots": [
+    0.337
+  ],
+  "fork_episode_records": [
+    {
+      "duration_ms": 4044,
+      "duration_slots": 0.337,
+      "end_ms": 64044,
+      "end_slot": 5,
+      "maximum_width": 2,
+      "observed_heads": [
+        "b000002-v00004",
+        "b000005-v00005"
+      ],
+      "start_ms": 60000,
+      "start_slot": 5
+    }
+  ],
+  "fork_rate_per_1000_slots": 125.0,
+  "forks": {
+    "block_classification": {
+      "b000000-v00007": "canonical",
+      "b000001-v00007": "canonical",
+      "b000002-v00004": "orphaned",
+      "b000005-v00005": "canonical",
+      "b000006-v00007": "canonical",
+      "b000007-v00007": "canonical"
+    },
+    "canonical_blocks": 5,
+    "canonical_head": "b000007-v00007",
+    "fork_episode_count": 1,
+    "fork_episode_records": [
+      {
+        "duration_ms": 4044,
+        "duration_slots": 0.337,
+        "end_ms": 64044,
+        "end_slot": 5,
+        "maximum_width": 2,
+        "observed_heads": [
+          "b000002-v00004",
+          "b000005-v00005"
+        ],
+        "start_ms": 60000,
+        "start_slot": 5
+      }
+    ],
+    "fork_rate_per_1000_slots": 125.0,
+    "global_reorganization_count": 0,
+    "local_reorganization_count": 1,
+    "maximum_fork_duration_ms": 4044,
+    "maximum_fork_duration_slots": 0.337,
+    "maximum_fork_width": 2,
+    "maximum_global_reorganization_depth": 0,
+    "maximum_local_reorganization_depth": 1,
+    "mean_fork_duration_ms": 4044.0,
+    "mean_fork_duration_slots": 0.337,
+    "mean_global_reorganization_depth": 0.0,
+    "mean_local_reorganization_depth": 1.0,
+    "orphaned_block_rate": 0.166666666667,
+    "orphaned_blocks": 1,
+    "orphaned_blocks_per_1000_slots": 125.0,
+    "unresolved_blocks": 0,
+    "validators_experiencing_reorganization": 1
+  },
+  "global_reorganization_count": 0,
+  "global_reorganization_depths": [],
+  "head_agreement_by_epoch": [
+    0.875,
+    1.0
+  ],
+  "head_agreement_by_slot": [
+    1.0,
+    1.0,
+    0.875,
+    0.875,
+    0.875,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "intra_isp_edge_fraction": 0.166666666667,
+  "intra_region_edge_fraction": 0.166666666667,
+  "isp_validator_counts": {
+    "isp_a": 4,
+    "isp_b": 4
+  },
+  "justification_transitions": 8,
+  "late_attestations": 0,
+  "latency_component_occupancy": {},
+  "latency_distribution": "fixed",
+  "latency_model": {
+    "calibration_mode": "parameters",
+    "family": "fixed",
+    "fixed_ms": 40,
+    "max_ms": 0.0,
+    "mode": "distribution",
+    "name": "",
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0,
+    "shift_ms": 0.0,
+    "weight": 1.0
+  },
+  "latency_profile_name": "",
+  "latency_profile_pair_count": 0,
+  "latency_profile_source": "",
+  "latency_profile_symmetric": true,
+  "latency_state_occupancy": {},
+  "latency_state_run_summary": {},
+  "latency_state_same_transition_rate": 0.0,
+  "latency_state_transition_counts": {},
+  "local_reorganization_count": 1,
+  "local_reorganization_depths": [
+    1
+  ],
+  "max_end_to_end_delay_ms": 132.0,
+  "max_inbound_queue_delay_ms": 2.0,
+  "max_inbound_service_time_ms": 1.0,
+  "max_inbound_utilization": 0.000510421984,
+  "max_network_delay_ms": 40.0,
+  "max_outbound_queue_delay_ms": 3.0,
+  "max_outbound_service_time_ms": 1.0,
+  "max_outbound_utilization": 0.00088542589,
+  "max_processing_queue_delay_ms": 0.0,
+  "max_processing_service_time_ms": 1.0,
+  "max_processing_utilization": 0.000510421984,
+  "maximum_finality_lag_epochs": 1.0,
+  "maximum_fork_width": 2,
+  "maximum_overlay_degree": 3,
+  "maximum_reorganization_depth": 1,
+  "maximum_validator_stake": 0.125,
+  "mean_end_to_end_delay_ms": 72.530666666667,
+  "mean_finality_agreement": 1.0,
+  "mean_head_agreement": 0.9375,
+  "mean_inbound_queue_delay_ms": 0.384,
+  "mean_inbound_service_time_ms": 1.0,
+  "mean_inbound_utilization": 0.000488286336,
+  "mean_network_delay_ms": 40.0,
+  "mean_outbound_queue_delay_ms": 0.770833333333,
+  "mean_outbound_service_time_ms": 1.0,
+  "mean_outbound_utilization": 0.000687507162,
+  "mean_overlay_degree": 3.0,
+  "mean_processing_queue_delay_ms": 0.0,
+  "mean_processing_service_time_ms": 1.0,
+  "mean_processing_utilization": 0.000488286336,
+  "mean_slot_head_agreement": 0.953125,
+  "mean_slot_stake_weighted_head_agreement": 0.953125,
+  "mean_stake_weighted_head_agreement": 0.9375,
+  "minimum_overlay_degree": 3,
+  "minimum_slot_stake_weighted_head_agreement": 0.875,
+  "minimum_validator_stake": 0.125,
+  "modal_finalized_checkpoint_by_epoch": [
+    "genesis",
+    "genesis"
+  ],
+  "modal_head_by_epoch": [
+    "b000001-v00007",
+    "b000007-v00007"
+  ],
+  "network_drops": 0,
+  "network_transmissions": 528,
+  "nominal_protocol_time_ms": 96000,
+  "on_time_attestations": 56,
+  "orphaned_block_rate": 0.166666666667,
+  "outage_events_ended": 1,
+  "outage_events_started": 1,
+  "outbound_transmission_attempts": 528,
+  "overlay_edge_count": 12,
+  "p50_end_to_end_delay_ms": 87.0,
+  "p50_inbound_queue_delay_ms": 0.0,
+  "p50_inbound_service_time_ms": 1.0,
+  "p50_network_delay_ms": 40.0,
+  "p50_outbound_queue_delay_ms": 1.0,
+  "p50_outbound_service_time_ms": 1.0,
+  "p50_processing_queue_delay_ms": 0.0,
+  "p50_processing_service_time_ms": 1.0,
+  "p95_checkpoint_time_to_finality_ms": 0.0,
+  "p95_end_to_end_delay_ms": 131.0,
+  "p95_inbound_queue_delay_ms": 2.0,
+  "p95_inbound_service_time_ms": 1.0,
+  "p95_network_delay_ms": 40.0,
+  "p95_outbound_queue_delay_ms": 2.0,
+  "p95_outbound_service_time_ms": 1.0,
+  "p95_processing_queue_delay_ms": 0.0,
+  "p95_processing_service_time_ms": 1.0,
+  "p999_end_to_end_delay_ms": 132.0,
+  "p999_inbound_queue_delay_ms": 2.0,
+  "p999_inbound_service_time_ms": 1.0,
+  "p999_network_delay_ms": 40.0,
+  "p999_outbound_queue_delay_ms": 3.0,
+  "p999_outbound_service_time_ms": 1.0,
+  "p999_processing_queue_delay_ms": 0.0,
+  "p999_processing_service_time_ms": 1.0,
+  "p99_end_to_end_delay_ms": 132.0,
+  "p99_inbound_queue_delay_ms": 2.0,
+  "p99_inbound_service_time_ms": 1.0,
+  "p99_network_delay_ms": 40.0,
+  "p99_outbound_queue_delay_ms": 3.0,
+  "p99_outbound_service_time_ms": 1.0,
+  "p99_processing_queue_delay_ms": 0.0,
+  "p99_processing_service_time_ms": 1.0,
+  "processed_bytes": 5122752,
+  "processed_messages": 437,
+  "proposal_availability": 0.75,
+  "proposal_duties_assigned": 8,
+  "proposal_duties_completed": 6,
+  "proposal_duties_missed_offline": 2,
+  "proposal_stake_assigned": 1.0,
+  "proposal_stake_completed": 0.75,
+  "recovered_to_one_epoch_by_end": 1,
+  "region_pair_latency": {
+    "europe->europe": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 30,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 30
+    },
+    "europe->north_america": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 219,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 219
+    },
+    "north_america->europe": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 238,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 238
+    },
+    "north_america->north_america": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 41,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 41
+    }
+  },
+  "region_stake": {
+    "europe": 0.5,
+    "north_america": 0.5
+  },
+  "region_validator_counts": {
+    "europe": 4,
+    "north_america": 4
+  },
+  "resource_model_enabled": true,
+  "seed": 21,
+  "simulation_end_time_ms": 95999,
+  "slot_divergence_rate_below_0_9": 0.375,
+  "slots": 8,
+  "stake_distribution": "equal",
+  "stake_hhi": 0.125,
+  "stake_modal_head_by_epoch": [
+    "b000001-v00007",
+    "b000007-v00007"
+  ],
+  "stake_weighted_attestation_availability": 0.875,
+  "stake_weighted_finalized_epoch": [
+    0.0,
+    0.0
+  ],
+  "stake_weighted_head_agreement_by_epoch": [
+    0.875,
+    1.0
+  ],
+  "stake_weighted_head_agreement_by_slot": [
+    1.0,
+    1.0,
+    0.875,
+    0.875,
+    0.875,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "stake_weighted_justified_epoch": [
+    0.0,
+    1.0
+  ],
+  "stale_arrival_events": 6,
+  "stale_head_attestation_rate": 0.285714285714,
+  "stale_head_attestations": 16,
+  "transmission_bytes_attempted": 6483712,
+  "validator_count": 8,
+  "validator_outage_instances": 4,
+  "validator_recoveries_completed": 4,
+  "validator_status": {
+    "0": "online",
+    "1": "online",
+    "2": "online",
+    "3": "online",
+    "4": "online",
+    "5": "online",
+    "6": "online",
+    "7": "online"
+  },
+  "validators_experiencing_reorganization": 1
+}

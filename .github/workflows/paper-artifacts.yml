@@ -1,0 +1,41 @@
+name: paper-artifacts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,paper]"
+      - name: Test
+        run: pytest
+      - name: Run frozen experiments
+        run: |
+          python scripts/run_p99_dose_sweep.py --output results/v0.6/p99-dose
+          python scripts/run_temporal_dependence_experiment.py --output results/v0.6/temporal
+          python scripts/run_beyond_p99_experiment.py --output results/v0.6/beyond-p99
+          python scripts/run_finality_frontier.py --output results/v0.6/finality-frontier
+      - name: Build figures and tables
+        run: |
+          python scripts/build_paper_artifacts.py \
+            --results-root results/v0.6 \
+            --output results/paper-artifacts-v0.6
+      - uses: actions/upload-artifact@v4
+        with:
+          name: valence-v0.6-paper-artifacts
+          path: |
+            results/v0.6
+            results/paper-artifacts-v0.6
+          retention-days: 30

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/opt/pyvenv/bin/valence",
+    "run",
+    "configs/smoke.yaml",
+    "--output",
+    "validation/reference/v0.7/smoke"
+  ],
+  "config_path": "/mnt/data/valence-public-v0.7.0/configs/smoke.yaml",
+  "config_sha256": "d67de420be653a98ef53589da4a31bfe2ee797784ba7e2e0d13b25c9aafb4156",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+  "python_implementation": "CPython",
+  "python_version": "3.13.5",
+  "resolved_config_sha256": "9c7ed85129eb2de1c5c6dce4d84febaa956a916a794e00413f84f68f6e4f3099",
+  "run_hash": "bb2f4f25455ad81f92fb06b39b7784a2bc696f62d8045cbce688c5cc5cda7e44",
+  "valence_version": "0.7.0"
+}

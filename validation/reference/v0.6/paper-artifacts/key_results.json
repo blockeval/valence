@@ -1,0 +1,31 @@
+{
+  "beyond_p99": {
+    "bounded_divergence": 0.0159574468086,
+    "bounded_p999_seconds": 9.3677217619,
+    "heavy_divergence": 0.03723404255315,
+    "heavy_p999_seconds": 25.497271458700002
+  },
+  "finality_frontier": {
+    "first_observed_delay_duration_slots": 8,
+    "majority_delay_duration_slots": 8,
+    "near_certain_delay_duration_slots": 8
+  },
+  "p99_dose": {
+    "agreement_extreme": 0.97344059394485,
+    "agreement_low": 1.0,
+    "stale_rate_extreme": 0.2015625,
+    "stale_rate_low": 0.063671875
+  },
+  "temporal_dependence": {
+    "iid_agreement": 0.9889237348015,
+    "iid_divergence": 0.03829787234035,
+    "marginal_relative_differences": {
+      "observed_p50_ms": -0.0007186303016488082,
+      "observed_p95_ms": 0.0038648982514461285,
+      "observed_p999_ms": -0.0004669300673476804,
+      "observed_p99_ms": 0.010124973764908117
+    },
+    "markov_agreement": 0.9625943061295,
+    "markov_divergence": 0.11595744680835
+  }
+}

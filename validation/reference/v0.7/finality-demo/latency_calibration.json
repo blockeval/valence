@@ -1,0 +1,384 @@
+{
+  "attempted_base_latency": {
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0
+  },
+  "attempted_effective_latency": {
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0
+  },
+  "delivered_to_attempted_p999_ratio": 1.0,
+  "delivered_to_attempted_p99_ratio": 1.0,
+  "latency_component_occupancy": {},
+  "latency_distribution": "fixed",
+  "latency_model": {
+    "calibration_mode": "parameters",
+    "family": "fixed",
+    "fixed_ms": 40,
+    "max_ms": 0.0,
+    "mode": "distribution",
+    "name": "",
+    "p50_ms": 40.0,
+    "p95_ms": 40.0,
+    "p999_ms": 40.0,
+    "p99_ms": 40.0,
+    "shift_ms": 0.0,
+    "weight": 1.0
+  },
+  "latency_profile_name": "",
+  "latency_profile_pair_count": 0,
+  "latency_profile_source": "",
+  "latency_profile_symmetric": true,
+  "latency_state_occupancy": {},
+  "latency_state_run_summary": {},
+  "latency_state_same_transition_rate": 0.0,
+  "latency_state_transition_counts": {},
+  "region_pair_latency": {
+    "asia->asia": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 354,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 354
+    },
+    "asia->europe": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 612,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 612
+    },
+    "asia->north_america": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 718,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 718
+    },
+    "europe->asia": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 571,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 571
+    },
+    "europe->europe": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 125,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 125
+    },
+    "europe->north_america": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 896,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 896
+    },
+    "north_america->asia": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 738,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 738
+    },
+    "north_america->europe": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 878,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 878
+    },
+    "north_america->north_america": {
+      "calibration_error": {
+        "p50_ms_absolute_error_ms": 0.0,
+        "p95_ms_absolute_error_ms": 0.0,
+        "p999_ms_absolute_error_ms": 0.0,
+        "p99_ms_absolute_error_ms": 0.0
+      },
+      "drop_rate": 0.0,
+      "drops": 0,
+      "observed_base": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "observed_effective": {
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0
+      },
+      "samples": 306,
+      "target": {
+        "calibration_mode": "parameters",
+        "family": "fixed",
+        "fixed_ms": 40,
+        "max_ms": 0.0,
+        "mode": "distribution",
+        "name": "",
+        "p50_ms": 40.0,
+        "p95_ms": 40.0,
+        "p999_ms": 40.0,
+        "p99_ms": 40.0,
+        "shift_ms": 0.0,
+        "weight": 1.0
+      },
+      "transmissions": 306
+    }
+  }
+}

@@ -1,0 +1,50 @@
+simulation:
+  seed: 14
+  slots: 48
+  record_events: false
+validators:
+  count: 32
+  regions: [global]
+  region_assignment: round_robin
+  isps: [isp_a, isp_b, isp_c, isp_d]
+  isp_assignment: weighted
+  isp_weights: [0.35, 0.30, 0.20, 0.15]
+  stake_distribution: lognormal
+  stake_sigma: 0.65
+topology:
+  kind: ring_plus_random
+  degree: 2
+  minimum_cross_region_peers: 0
+network:
+  latency:
+    distribution: mixture
+    max_ms: 24000
+    components:
+      - name: normal
+        family: quantile_piecewise
+        weight: 0.90
+        p50_ms: 120
+        p95_ms: 500
+        p99_ms: 900
+        max_ms: 3000
+      - name: congested
+        family: quantile_piecewise
+        weight: 0.10
+        p50_ms: 2500
+        p95_ms: 7000
+        p99_ms: 12000
+        max_ms: 24000
+  loss:
+    model: none
+  block_size_bytes: 120000
+  attestation_size_bytes: 512
+  fanout: 2
+resources:
+  enabled: false
+protocol:
+  slot_duration_ms: 12000
+  epoch_length_slots: 8
+  committee_fraction: 0.25
+  attestation_delay_ms: 4000
+  attestation_deadline_ms: 8000
+  finality_enabled: true

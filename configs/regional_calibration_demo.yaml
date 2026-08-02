@@ -1,0 +1,41 @@
+simulation:
+  seed: 14
+  slots: 16
+  record_events: true
+validators:
+  count: 96
+  regions: [north_america, europe, asia, oceania]
+  region_assignment: weighted
+  region_weights: [0.40, 0.30, 0.20, 0.10]
+  isps: [isp_a, isp_b, isp_c, isp_d]
+  isp_assignment: weighted
+  isp_weights: [0.35, 0.30, 0.20, 0.15]
+  stake_distribution: lognormal
+  stake_sigma: 0.65
+topology:
+  kind: regional_clustered
+  degree: 6
+  same_region_bias: 0.82
+  same_isp_bias: 0.20
+  minimum_cross_region_peers: 1
+network:
+  latency:
+    distribution: regional_profile
+    profile_path: ../calibration/profiles/synthetic_global_quantiles.yaml
+    p50_ms: 120
+    p95_ms: 250
+    p99_ms: 500
+  loss:
+    model: none
+  block_size_bytes: 120000
+  attestation_size_bytes: 512
+  fanout: 4
+resources:
+  enabled: false
+protocol:
+  slot_duration_ms: 12000
+  epoch_length_slots: 8
+  committee_fraction: 0.25
+  attestation_delay_ms: 4000
+  attestation_deadline_ms: 8000
+  finality_enabled: true

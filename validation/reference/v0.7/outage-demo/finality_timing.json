@@ -1,0 +1,30 @@
+{
+  "censored_checkpoints": 2,
+  "checkpoint_finality_records": [
+    {
+      "censor_time_ms": 84000,
+      "checkpoint_id": "b000001-v00007",
+      "created_at_ms": 12000,
+      "finalized_at_ms": null,
+      "right_censored": true,
+      "target_epoch": 1,
+      "time_to_finality_ms": null
+    },
+    {
+      "censor_time_ms": 72000,
+      "checkpoint_id": "b000002-v00004",
+      "created_at_ms": 24000,
+      "finalized_at_ms": null,
+      "right_censored": true,
+      "target_epoch": 1,
+      "time_to_finality_ms": null
+    }
+  ],
+  "checkpoint_finalization_rate": 0.0,
+  "finalized_checkpoints": 0,
+  "maximum_checkpoint_time_to_finality_ms": 0.0,
+  "mean_checkpoint_time_to_finality_ms": 0.0,
+  "p50_checkpoint_time_to_finality_ms": 0.0,
+  "p95_checkpoint_time_to_finality_ms": 0.0,
+  "p99_checkpoint_time_to_finality_ms": 0.0
+}

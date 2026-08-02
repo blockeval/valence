@@ -1,0 +1,21 @@
+{
+  "censored_checkpoints": 1,
+  "checkpoint_finality_records": [
+    {
+      "censor_time_ms": 60000,
+      "checkpoint_id": "b000003-v00003",
+      "created_at_ms": 36000,
+      "finalized_at_ms": null,
+      "right_censored": true,
+      "target_epoch": 1,
+      "time_to_finality_ms": null
+    }
+  ],
+  "checkpoint_finalization_rate": 0.0,
+  "finalized_checkpoints": 0,
+  "maximum_checkpoint_time_to_finality_ms": 0.0,
+  "mean_checkpoint_time_to_finality_ms": 0.0,
+  "p50_checkpoint_time_to_finality_ms": 0.0,
+  "p95_checkpoint_time_to_finality_ms": 0.0,
+  "p99_checkpoint_time_to_finality_ms": 0.0
+}

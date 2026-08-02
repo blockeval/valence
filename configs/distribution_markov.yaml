@@ -1,0 +1,77 @@
+network:
+  attestation_size_bytes: 512
+  block_size_bytes: 120000
+  fanout: 2
+  loss:
+    model: none
+  latency:
+    distribution: markov_modulated
+    initial_state: 0
+    states:
+    - name: normal
+      component:
+        family: lognormal
+        calibration_mode: p50_p95
+        p50_ms: 120
+        p95_ms: 500
+        p99_ms: 1000
+        max_ms: 5000
+    - name: congested
+      component:
+        family: gamma
+        shape: 2.0
+        scale_ms: 500
+        shift_ms: 200
+        max_ms: 10000
+    - name: severe
+      component:
+        family: generalized_pareto
+        shape: 0.3
+        scale_ms: 1800
+        shift_ms: 1000
+        max_ms: 30000
+    transition_matrix:
+    - - 0.985
+      - 0.014
+      - 0.001
+    - - 0.12
+      - 0.86
+      - 0.02
+    - - 0.08
+      - 0.25
+      - 0.67
+protocol:
+  attestation_deadline_ms: 8000
+  attestation_delay_ms: 4000
+  committee_fraction: 0.25
+  epoch_length_slots: 8
+  finality_enabled: true
+  slot_duration_ms: 12000
+resources:
+  enabled: false
+simulation:
+  record_events: false
+  seed: 14
+  slots: 32
+topology:
+  degree: 2
+  kind: ring_plus_random
+  minimum_cross_region_peers: 0
+validators:
+  count: 32
+  isp_assignment: weighted
+  isp_weights:
+  - 0.35
+  - 0.3
+  - 0.2
+  - 0.15
+  isps:
+  - isp_a
+  - isp_b
+  - isp_c
+  - isp_d
+  region_assignment: round_robin
+  regions:
+  - global
+  stake_distribution: lognormal
+  stake_sigma: 0.65

@@ -1,0 +1,14 @@
+name: synthetic_global_quantiles_v1
+source: "Illustrative synthetic calibration profile; not derived from production measurements."
+symmetric: true
+pairs:
+  - {source_region: north_america, target_region: north_america, p50_ms: 35, p95_ms: 80, p99_ms: 170}
+  - {source_region: europe, target_region: europe, p50_ms: 30, p95_ms: 70, p99_ms: 150}
+  - {source_region: asia, target_region: asia, p50_ms: 45, p95_ms: 100, p99_ms: 220}
+  - {source_region: oceania, target_region: oceania, p50_ms: 50, p95_ms: 120, p99_ms: 260}
+  - {source_region: north_america, target_region: europe, p50_ms: 90, p95_ms: 170, p99_ms: 330}
+  - {source_region: north_america, target_region: asia, p50_ms: 170, p95_ms: 310, p99_ms: 600}
+  - {source_region: north_america, target_region: oceania, p50_ms: 190, p95_ms: 350, p99_ms: 680}
+  - {source_region: europe, target_region: asia, p50_ms: 145, p95_ms: 270, p99_ms: 520}
+  - {source_region: europe, target_region: oceania, p50_ms: 180, p95_ms: 330, p99_ms: 640}
+  - {source_region: asia, target_region: oceania, p50_ms: 105, p95_ms: 210, p99_ms: 430}

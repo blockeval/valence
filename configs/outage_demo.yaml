@@ -1,0 +1,53 @@
+simulation:
+  seed: 21
+  slots: 8
+  record_events: true
+
+validators:
+  count: 8
+  regions: [north_america, europe]
+  isps: [isp_a, isp_b]
+  stake_distribution: equal
+
+topology:
+  kind: ring_plus_random
+  degree: 3
+
+network:
+  fanout: 0
+  block_size_bytes: 120000
+  attestation_size_bytes: 512
+  latency:
+    distribution: fixed
+    fixed_ms: 40
+  loss:
+    model: none
+
+resources:
+  enabled: true
+  outbound_bandwidth_mbps: 10000
+  inbound_bandwidth_mbps: 10000
+  processing_rate_mbps: 10000
+  processing_fixed_ms: 0
+
+protocol:
+  slot_duration_ms: 12000
+  epoch_length_slots: 4
+  committee_fraction: 1.0
+  attestation_delay_ms: 4000
+  attestation_deadline_ms: 8000
+  justification_threshold: 0.6666666667
+
+faults:
+  - name: europe_crash
+    action: validator_outage
+    scope: region
+    targets: [europe]
+    start_slot: 2
+    duration_slots: 2
+    recovery_mode: preserve_view
+    resynchronization_ms: 2000
+
+metrics:
+  minimum_branch_support: 0.05
+  orphan_settlement_slots: 2

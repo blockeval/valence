@@ -1,0 +1,45 @@
+{
+  "block_classification": {
+    "b000000-v00007": "canonical",
+    "b000001-v00007": "canonical",
+    "b000002-v00004": "orphaned",
+    "b000005-v00005": "canonical",
+    "b000006-v00007": "canonical",
+    "b000007-v00007": "canonical"
+  },
+  "canonical_blocks": 5,
+  "canonical_head": "b000007-v00007",
+  "fork_episode_count": 1,
+  "fork_episode_records": [
+    {
+      "duration_ms": 4044,
+      "duration_slots": 0.337,
+      "end_ms": 64044,
+      "end_slot": 5,
+      "maximum_width": 2,
+      "observed_heads": [
+        "b000002-v00004",
+        "b000005-v00005"
+      ],
+      "start_ms": 60000,
+      "start_slot": 5
+    }
+  ],
+  "fork_rate_per_1000_slots": 125.0,
+  "global_reorganization_count": 0,
+  "local_reorganization_count": 1,
+  "maximum_fork_duration_ms": 4044,
+  "maximum_fork_duration_slots": 0.337,
+  "maximum_fork_width": 2,
+  "maximum_global_reorganization_depth": 0,
+  "maximum_local_reorganization_depth": 1,
+  "mean_fork_duration_ms": 4044.0,
+  "mean_fork_duration_slots": 0.337,
+  "mean_global_reorganization_depth": 0.0,
+  "mean_local_reorganization_depth": 1.0,
+  "orphaned_block_rate": 0.166666666667,
+  "orphaned_blocks": 1,
+  "orphaned_blocks_per_1000_slots": 125.0,
+  "unresolved_blocks": 0,
+  "validators_experiencing_reorganization": 1
+}

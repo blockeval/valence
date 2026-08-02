@@ -1,0 +1,68 @@
+{
+  "loglogistic": {
+    "delivered_p999_ms": 4404.195800000072,
+    "delivered_p99_ms": 1657.5959999999977,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 150.232483,
+    "observed_p95_ms": 797.6222895999999,
+    "observed_p999_ms": 7505.7945566,
+    "observed_p99_ms": 2114.917814,
+    "stale_head_attestation_rate": 0.0984375
+  },
+  "lognormal": {
+    "delivered_p999_ms": 2917.6822000000197,
+    "delivered_p99_ms": 1461.087999999998,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 150.2652996,
+    "observed_p95_ms": 797.7879554,
+    "observed_p999_ms": 3451.5194744,
+    "observed_p99_ms": 1636.5668124,
+    "stale_head_attestation_rate": 0.07578125
+  },
+  "markov_modulated": {
+    "delivered_p999_ms": 3748.434000000019,
+    "delivered_p99_ms": 2113.2659999999983,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 136.1434176,
+    "observed_p95_ms": 1181.9341912,
+    "observed_p999_ms": 5495.9967718,
+    "observed_p99_ms": 2406.3995974,
+    "stale_head_attestation_rate": 0.11640625
+  },
+  "quantile_piecewise": {
+    "delivered_p999_ms": 5277.163000000041,
+    "delivered_p99_ms": 2015.9919999999956,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 150.2594376,
+    "observed_p95_ms": 806.28349,
+    "observed_p999_ms": 11765.8633742,
+    "observed_p99_ms": 3130.5480098000003,
+    "stale_head_attestation_rate": 0.1265625
+  },
+  "spliced_gpd": {
+    "delivered_p999_ms": 4209.940400000075,
+    "delivered_p99_ms": 1376.297999999999,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 150.2646732,
+    "observed_p95_ms": 797.8527368,
+    "observed_p999_ms": 7723.124269,
+    "observed_p99_ms": 1724.9320584,
+    "stale_head_attestation_rate": 0.09921875
+  },
+  "weibull": {
+    "delivered_p999_ms": 1982.5390000000139,
+    "delivered_p99_ms": 1258.2659999999983,
+    "finality_lag_epochs": 1.0,
+    "mean_stake_weighted_head_agreement": 1.0,
+    "observed_p50_ms": 150.343223,
+    "observed_p95_ms": 798.1713184,
+    "observed_p999_ms": 2068.5830092,
+    "observed_p99_ms": 1327.039815,
+    "stale_head_attestation_rate": 0.0578125
+  }
+}
