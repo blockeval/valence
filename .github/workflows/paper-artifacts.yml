@@ -32,7 +32,7 @@ jobs:
           python scripts/build_paper_artifacts.py \
             --results-root results/v0.6 \
             --output results/paper-artifacts-v0.6
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: valence-v0.6-paper-artifacts
           path: |
