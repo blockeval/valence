@@ -4,7 +4,7 @@
 
 VALENCE is a deterministic discrete-event simulation framework for studying how
 network volatility and validator resource constraints affect Proof-of-Stake
-consensus. Version 0.7 includes:
+consensus. Version 0.8 includes:
 
 - one global, deterministically ordered event queue;
 - isolated random-number streams for topology, stake, duties, latency, loss,
@@ -27,6 +27,8 @@ consensus. Version 0.7 includes:
 - message-size-aware block and attestation transmission;
 - stage-specific queue, service, end-to-end delay, byte, and utilization metrics;
 - stake-weighted proposer and committee selection;
+- a version-pinned Ethereum consensus-specs v1.6.1 / stable Fulu timing and duty profile;
+- minimal and mainnet presets with swap-or-not shuffling, committee indices, and balance-weighted proposer selection;
 - scheduled validator crash, recovery, and restart-from-finalized-checkpoint faults;
 - global, regional, ISP, explicit-validator, random-fraction, and stake-based outage selectors;
 - explicit proposal and attestation availability with assigned-duty denominators;
@@ -38,8 +40,10 @@ consensus. Version 0.7 includes:
 - reproducibility hashes, resolved configurations, metadata, and event logs; and
 - automated deterministic, statistical, stake, finality, resource, temporal-dependence, and tail-shape tests.
 
-The protocol is intentionally described as **Beacon-like**. It is not presented
-as an exact Ethereum implementation. The resource layer is a deterministic
+The default protocol remains an auditable **Beacon-like** abstraction. Version
+0.8 also provides an `ethereum_calibrated` profile for version-pinned timing,
+committee assignment, and proposer duties. This profile is not a complete
+Ethereum state transition or client. The resource layer is a deterministic
 single-server queue model, not a packet-level TCP or operating-system model.
 
 ## Install and test
@@ -63,6 +67,9 @@ valence run configs/resource_congestion.yaml --output results/resource-congestio
 valence run configs/heavy_tail.yaml --output results/heavy-tail
 valence run configs/outage_demo.yaml --output results/outage-demo
 python scripts/run_poster_compliance_demo.py --output results/poster-compliance-v0.7
+valence run configs/ethereum_minimal_smoke.yaml --output results/ethereum-minimal
+valence run configs/ethereum_mainnet_smoke.yaml --output results/ethereum-mainnet
+python scripts/run_ethereum_cross_model_experiment.py --output results/ethereum-cross-model-30
 ```
 
 Every output directory contains:
@@ -81,6 +88,20 @@ run_hash.txt
 ```
 
 
+
+
+## Ethereum-calibrated timing and duties
+
+VALENCE v0.8 supports `minimal` and `mainnet` profiles pinned to Ethereum
+consensus-specification release v1.6.1 and stable Fulu. The profile controls slot
+and epoch timing, committee counts, swap-or-not shuffling, committee indices,
+effective-balance adaptation, proposer selection, and attestation timing. See
+`docs/ethereum-calibrated-profile.md` for the exact conformance boundary.
+
+The profile deliberately uses a deterministic RANDAO surrogate and retains the
+Beacon-like fork-choice and finality engine. Run metadata makes both facts
+explicit, preventing the profile from being mistaken for a complete Ethereum
+client.
 
 
 ## Availability, outages, forks, and finality timing

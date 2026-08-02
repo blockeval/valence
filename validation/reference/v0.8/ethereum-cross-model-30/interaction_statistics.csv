@@ -1,0 +1,9 @@
+comparison,metric,family,pairs,reference_mean,candidate_mean,mean_difference,median_difference,difference_sd,bootstrap_ci_low,bootstrap_ci_high,cohen_dz,randomization_p,positive_differences,negative_differences,zero_differences,holm_adjusted_p_primary_family
+ethereum_minus_simplified_tail_effect,mean_slot_stake_weighted_head_agreement,primary,30,-0.027710804546300004,-0.029258800248100004,-0.0015479957017999978,-0.0009267191410000097,0.00601505062991794,-0.0036278306190441634,0.0005486201508191714,-0.2573537276811112,0.17247655046899063,10,19,1,0.5174296514069718
+ethereum_minus_simplified_tail_effect,stale_head_attestation_rate,primary,30,0.14322916666666666,0.128125,-0.015104166666666667,-0.015625,0.04582761850474113,-0.031510416666666666,0.0013020833333333333,-0.32958654975937823,0.0868782624347513,9,19,2,0.3475130497390052
+ethereum_minus_simplified_tail_effect,slot_divergence_rate_below_0_9,primary,30,0.0875,0.09166666666666666,0.004166666666666667,0.0,0.02282177322938192,-0.004166666666666667,0.0125,0.18257418583505539,0.46484375,7,3,20,0.9296875
+ethereum_minus_simplified_tail_effect,maximum_finality_lag_epochs,primary,30,0.06666666666666667,0.0,-0.06666666666666667,0.0,0.36514837167011066,-0.2,0.0,-0.1825741858350554,1.0,0,1,29,1.0
+ethereum_minus_simplified_tail_effect,attestation_availability,secondary,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0,0,30,
+ethereum_minus_simplified_tail_effect,stake_weighted_attestation_availability,secondary,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0,0,30,
+ethereum_minus_simplified_tail_effect,minimum_slot_stake_weighted_head_agreement,secondary,30,-0.3235192678865334,-0.3373890627597667,-0.013869794873233336,-0.013058411485500021,0.06817567695357901,-0.03821334694290584,0.01031728279688081,-0.2034419824342531,0.2752344953100938,11,18,1,
+ethereum_minus_simplified_tail_effect,mean_finality_agreement,secondary,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0,0,30,

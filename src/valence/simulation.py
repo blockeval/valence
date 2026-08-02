@@ -120,6 +120,7 @@ class ValenceSimulation:
             config.simulation.slots,
             block_size_bytes=config.network.block_size_bytes,
             attestation_size_bytes=config.network.attestation_size_bytes,
+            simulation_seed=config.simulation.seed,
         )
         self.network = NetworkModel(
             config.network,
@@ -276,6 +277,7 @@ class ValenceSimulation:
                 "simulation_end_time_ms": self.now_ms,
                 "nominal_protocol_time_ms": self.nominal_end_ms,
                 "stake_distribution": self.config.validators.stake_distribution,
+                "protocol_profile": self.protocol.metadata(),
                 "minimum_validator_stake": min(stakes),
                 "maximum_validator_stake": max(stakes),
                 "stake_hhi": sum(stake * stake for stake in stakes),
@@ -677,6 +679,7 @@ class ValenceSimulation:
             source_epoch=attestation.source_epoch,
             target_checkpoint_id=attestation.target_checkpoint_id,
             target_epoch=attestation.target_epoch,
+            committee_index=attestation.committee_index,
             size_bytes=message.size_bytes,
         )
 

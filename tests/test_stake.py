@@ -1,5 +1,6 @@
 from dataclasses import replace
 from pathlib import Path
+import pytest
 
 from valence import ValenceSimulation, load_config
 
@@ -20,8 +21,8 @@ def test_explicit_stakes_are_normalized_and_preserved_proportionally():
     config.validate()
     simulation = ValenceSimulation(config)
     stakes = [simulation.validators[i].stake for i in range(4)]
-    assert stakes == [0.4, 0.3, 0.2, 0.1]
-    assert sum(stakes) == 1.0
+    assert stakes == pytest.approx([0.4, 0.3, 0.2, 0.1])
+    assert sum(stakes) == pytest.approx(1.0)
 
 
 def test_lognormal_stakes_are_reproducible():

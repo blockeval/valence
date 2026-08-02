@@ -7,12 +7,13 @@ pip install -e ".[dev]"
 pytest
 ```
 
-VALENCE v0.7 contains **64 automated tests**. They cover deterministic event
+VALENCE v0.8 contains **75 automated tests**. They cover deterministic event
 ordering and run hashes, latency distributions and calibration, packet loss,
 resource queues, stake-weighted duties and finality, regional topology, frozen
-v0.6 experiment designs, and the v0.7 poster-compliance capabilities.
+v0.6 experiment designs, v0.7 poster-compliance capabilities, and the v0.8
+Ethereum-calibrated timing and duty profile.
 
-The v0.7 tests specifically verify:
+The v0.7 capability tests specifically verify:
 
 - 100% availability in the healthy oracle;
 - missed proposal and attestation duties during scheduled outages;
@@ -26,3 +27,13 @@ The v0.7 tests specifically verify:
 
 The smoke, outage, and finality demonstration configurations are deterministic
 oracles and should be run before large experimental sweeps.
+
+## Ethereum-calibrated profile
+
+```bash
+pytest tests/test_ethereum_profile.py
+```
+
+The release oracle expects 75 total tests. Ethereum-profile tests validate the
+version-pinned presets, specification-derived shuffling vectors, committee and
+proposer duties, configuration pinning, metadata, and smoke runs.

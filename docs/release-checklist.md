@@ -30,9 +30,9 @@ Confirm:
 ## Tag and release
 
 ```bash
-git tag -a v0.7.0 -m "VALENCE v0.7.0 public research release"
+git tag -a v0.8.0 -m "VALENCE v0.8.0 public research release"
 git push origin main
-git push origin v0.7.0
+git push origin v0.8.0
 ```
 
 The release workflow builds source and wheel artifacts. Attach the paper package

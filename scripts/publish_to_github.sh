@@ -15,7 +15,7 @@ fi
 
 git add .
 if ! git diff --cached --quiet; then
-  git commit -m "Release VALENCE v0.7.0"
+  git commit -m "Release VALENCE v0.8.0"
 fi
 
 if git remote get-url origin >/dev/null 2>&1; then
@@ -24,9 +24,9 @@ else
   git remote add origin "$REMOTE_URL"
 fi
 
-if ! git rev-parse v0.7.0 >/dev/null 2>&1; then
-  git tag -a v0.7.0 -m "VALENCE v0.7.0 public research release"
+if ! git rev-parse v0.8.0 >/dev/null 2>&1; then
+  git tag -a v0.8.0 -m "VALENCE v0.8.0 public research release"
 fi
 
 git push -u origin main
-git push origin v0.7.0
+git push origin v0.8.0

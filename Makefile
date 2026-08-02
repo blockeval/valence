@@ -25,3 +25,10 @@ paper:
 clean:
 	rm -rf build dist *.egg-info .pytest_cache .ruff_cache results
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +
+
+ethereum-smoke:
+	valence run configs/ethereum_minimal_smoke.yaml --output results/ethereum-minimal
+	valence run configs/ethereum_mainnet_smoke.yaml --output results/ethereum-mainnet
+
+ethereum-cross-model:
+	python scripts/run_ethereum_cross_model_experiment.py --output results/ethereum-cross-model-30
