@@ -1,5 +1,10 @@
 # VALENCE
 
+[![Tests](https://github.com/blockeval/valence/actions/workflows/tests.yml/badge.svg)](https://github.com/blockeval/valence/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/blockeval/valence)](https://github.com/blockeval/valence/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](pyproject.toml)
+
 **Validator Availability and Latency Emulator for Network Consensus Evaluation**
 
 VALENCE is a deterministic discrete-event simulation framework for studying how
