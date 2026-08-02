@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.1] - 2026-08-02
+
+### Changed
+
+- Upgraded `actions/checkout` from v4 to v7.
+- Upgraded `actions/setup-python` from v5 to v7.
+- Updated test, release, and paper-artifact workflows to use Node 24-compatible GitHub Actions.
+
+### Validation
+
+- Confirmed the complete 75-test suite across Python 3.10, 3.11, 3.12, and 3.13.
+
 ## 0.8.0 - 2026-08-02
 
 ### Added
